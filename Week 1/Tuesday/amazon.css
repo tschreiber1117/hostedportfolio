@@ -1,0 +1,130 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row; columns: auto;
+    grid-template-areas:
+      ". Amazon-logo ."
+      ". Amazon-clone ."
+      ". Account .";
+  }
+  
+  .Amazon-logo {
+    grid-area: Amazon-logo;
+    justify-self: center;
+
+  }
+  
+  .Amazon-clone {
+    display: grid;
+    grid-template-columns: 1.3fr 1.5fr 1.2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Sign-In Sign-In ."
+      "Email-or-phone-number Email-or-phone-number ."
+      "Terms-and-conditions Terms-and-conditions .";
+    grid-area: Amazon-clone;
+    border-width: 1px;
+    border-style:ridge
+  }
+  
+  .Sign-In {
+  
+    justify-self: center;
+    grid-area: Sign-In;
+    color: blue
+
+  }
+  
+  .Email-or-phone-number {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      ". . ."
+      "Input-of-text Input-of-text .";
+    grid-area: Email-or-phone-number;
+  }
+  
+  .Input-of-text {
+  
+    justify-self: center;
+    grid-area: Input-of-text;
+  }
+  
+  .Terms-and-conditions {
+  
+    justify-self: center;
+    grid-area: Terms-and-conditions;
+  }
+  
+  .Account {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "New-to-amazon New-to-amazon New-to-amazon"
+      "Create-acct Create-acct Create-acct"
+      ". . .";
+    grid-area: Account;
+  }
+  
+  .New-to-amazon { grid-area: New-to-amazon; }
+  
+  .Create-acct { grid-area: Create-acct; }
+  
+
+  html, body {
+    height:0px;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.btn-yellow {
+    background-color: rgb(223, 157, 13);
+}
+
+.btn-yellow:hover {
+    background-color:rgb(170, 120, 12)
+}
+.btn-gray {
+    background-color: lightgray
+}
+
+.btn-gray:hover {
+    background-color: gray
+}
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  h2 {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #000; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+ } 
+ h2 span { 
+  background:#fff; 
+  padding:0 10px; 
+}
